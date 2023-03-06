@@ -1,6 +1,6 @@
 @RestController
 public class ApiController {
-    private final String apiKey = "myApiKey123";
+    private final String API_KEY = "myApiKey123";
 
     @GetMapping("/api/data")
     public String getData() {
