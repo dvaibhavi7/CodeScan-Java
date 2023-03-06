@@ -1,0 +1,37 @@
+@RestController
+@RequestMapping("/api")
+public class ExampleController {
+
+    @GetMapping("/hello")
+    public String sayHello() {
+        return "Hello, World!";
+    }
+
+    @PostMapping("/calculate")
+    public int calculate(@RequestBody CalculationRequest request) {
+        int a = request.getA();
+        int b = request.getB();
+        String operator = request.getOperator();
+        if (operator.equals("+")) {
+            return a + b;
+        } else if (operator.equals("-")) {
+            return a - b;
+        } else if (operator.equals("*")) {
+            return a * b;
+        } else if (operator.equals("/")) {
+            return a / b;
+        } else {
+            throw new IllegalArgumentException("Invalid operator: " + operator);
+        }
+    }
+
+    @GetMapping("/random")
+    public int getRandom(@RequestParam int min, @RequestParam int max) {
+        if (min >= max) {
+            throw new IllegalArgumentException("min must be less than max");
+        }
+        Random random = new Random();
+        return random.nextInt(max - min) + min;
+    }
+
+}
