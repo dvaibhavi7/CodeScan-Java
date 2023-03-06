@@ -23,4 +23,8 @@ public class MyController {
         return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(e.getMessage());
     }
     
+    public String sayHello() {
+        return "Hello, World!";
+    }
+    
 }
