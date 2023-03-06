@@ -15,13 +15,4 @@
         <exclude name="UseStringBufferForStringAppends"/>
     </rule>
     <rule ref="category/java/performance.xml"/>
-    <rule name="Null Assignment" language="java" message="Assigning a 'null' to argument '.*' (org.codecop.pmd.rule.assignment.NullAssignmentRule)" class="org.codecop.pmd.rule.assignment.NullAssignmentRule">
-        <priority>2</priority>
-        <properties>
-            <property name="violationSeverity" value="3"/>
-            <property name="violationSuppressXPath" value=".//*[SelfEnclosedExpression and (VariableInitializer or Expression)]"/>
-            <property name="violationSuppressOwnerXPath" value=".//VariableDeclarator"/>
-        </properties>
-    </rule>
-
 </pmd>
