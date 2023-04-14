@@ -1,3 +1,4 @@
+import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class UserController {
 
@@ -31,17 +32,6 @@ public class UserController {
     }
 }
 
-@Service
-public class UserServiceImpl implements UserService {
-
-    @Autowired
-    private UserRepository userRepository;
-
-    @Override
-    public User findById(Long id) {
-        return userRepository.findById(id).orElse(null);
-    }
-}
 
 @Repository
 public interface UserRepository extends JpaRepository<User, Long> {
