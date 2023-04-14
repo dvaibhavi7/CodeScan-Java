@@ -2,16 +2,6 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class UserController {
 
-    @Autowired
-    private UserService userService;
-
-    private final UserRepository userRepository;
-
-
-    public UserController(UserRepository userRepository) {
-        this.userRepository = userRepository;
-    }
-
     public ResponseEntity<User> getUserById(Long id) {
         User user = userRepository.findById(id).orElse(null);
 
@@ -32,8 +22,3 @@ public class UserController {
     }
 }
 
-
-@Repository
-public interface UserRepository extends JpaRepository<User, Long> {
-
-}
