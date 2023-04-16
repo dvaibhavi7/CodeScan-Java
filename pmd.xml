@@ -1,15 +1,8 @@
 <?xml version="1.0"?>
 <pmd version="6.38.0">
     <description>My custom ruleset for Java code.</description>
-
-    <rule name="Avoid using 'myApiKey123'" language="java" message="Avoid using the word 'myApiKey123'">
+    <rule name="Avoid using 'myApiKey123'" language="java" message="Avoid using the word 'myApiKey123'" class="com.example.MyCustomRule">
         <description>Scan for the word 'myApiKey123'</description>
         <priority>3</priority>
-        <properties>
-            <property name="xpath">
-                <value>//*[contains(text(),'myApiKey123')]</value>
-            </property>
-        </properties>
     </rule>
-
 </pmd>
