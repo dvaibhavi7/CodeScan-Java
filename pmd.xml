@@ -27,8 +27,7 @@
     <rule ref="rulesets/java/optimizations.xml"/>
     <rule ref="category/java/errorprone.xml"/>
     <rule ref="category/java/bestpractices.xml">
-        <exclude name="UseStringBufferForStringAppends"/>
-        <include name="MyCustomRule"/>
+         <rule ref="MyCustomRule"/>
     </rule>
     <rule ref="category/java/performance.xml"/>
     <rule ref="category/java/design.xml" />
