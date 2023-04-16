@@ -1,16 +1,8 @@
 <?xml version="1.0"?>
-<ruleset name="MyCustomRuleSet"
-         xmlns="http://pmd.sourceforge.net/ruleset/2.0.0"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://pmd.sourceforge.net/ruleset/2.0.0 https://pmd.sourceforge.io/ruleset_2_0_0.xsd">
-    <description>
-        My custom ruleset for Java code.
-    </description>
-    <rule name="MyCustomRule"
-          language="java"
-          message="Avoid using the word 'myApiKey123'"
-          class="com.example.MyCustomRule"
-          externalInfoUrl="https://github.com/dvaibhavi7/CodeScan-Java">
+<pmd version="6.38.0">
+    <description>My custom ruleset for Java code.</description>
+
+    <rule name="Avoid using 'myApiKey123'" language="java" message="Avoid using the word 'myApiKey123'">
         <description>Scan for the word 'myApiKey123'</description>
         <priority>3</priority>
         <properties>
@@ -19,4 +11,5 @@
             </property>
         </properties>
     </rule>
-</ruleset>
+
+</pmd>
