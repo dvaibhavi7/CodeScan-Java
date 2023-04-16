@@ -9,10 +9,6 @@
     <rule ref="rulesets/java/naming.xml"/>
     <rule ref="rulesets/java/strictexception.xml"/>
     <rule ref="rulesets/java/optimizations.xml"/>
-    <rule ref="category/java/errorprone.xml"/>
-    <rule ref="category/java/bestpractices.xml">
-        <exclude name="UseStringBufferForStringAppends"/>
-    </rule>
     <rule name="MyCustomRule"
           language="java"
           message="Avoid using the word 'myApiKey123'"
@@ -25,6 +21,10 @@
                 <value>//Literal[contains(@Image, 'myApiKey123')]</value>
             </property>
         </properties>
+    </rule>
+    <rule ref="category/java/errorprone.xml"/>
+    <rule ref="category/java/bestpractices.xml">
+        <exclude name="UseStringBufferForStringAppends"/>
     </rule>
     <rule ref="category/java/performance.xml"/>
     <rule ref="category/java/errorprone.xml"/>
