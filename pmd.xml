@@ -1,15 +1,15 @@
 <?xml version="1.0"?>
 <pmd version="6.38.0" xmlns="http://pmd.sourceforge.net/ruleset/2.0.0"
      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-     xsi:schemaLocation="http://pmd.sourceforge.net/ruleset/2.0.0 https://pmd.sourceforge.io/ruleset/2.0.0/pmd_ruleset_2_0_0.xsd">
-    <ruleset name="MyCustomRuleSet">
-        <description>My custom ruleset for Java code.</description>
-        <rule name="Avoid using 'myApiKey123'"
-              language="java"
-              message="Avoid using the word 'myApiKey123'"
-              class="com.example.AvoidMyApiKeyRule">
-            <description>Scan for the word 'myApiKey123'</description>
-            <priority>3</priority>
-        </rule>
-    </ruleset>
+     xsi:schemaLocation="http://pmd.sourceforge.net/ruleset/2.0.0 https://pmd.sourceforge.io/ruleset/2.0.0/pmd_ruleset_2_0_0.xsd"
+     name="MyCustomRuleSet"
+     description="My custom ruleset for Java code.">
+    <rule name="Avoid using 'myApiKey123'">
+        <description>Do not use hardcoded API keys.</description>
+        <priority>1</priority>
+        <example><![CDATA[
+            String apiKey = "myApiKey123"; // Avoid
+        ]]></example>
+        <xpath>//Literal[@Image='myApiKey123']</xpath>
+    </rule>
 </pmd>
