@@ -1,5 +1,6 @@
 <?xml version="1.0"?>
 <pmd version="6.38.0">
+    <name>MyCustomRuleSet</name>
     <description>My custom ruleset for Java code.</description>
     <rule name="Avoid using 'myApiKey123'"
           language="java"
