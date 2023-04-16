@@ -38,17 +38,5 @@
     <rule ref="rulesets/java/naming.xml"/>
     <rule ref="rulesets/java/strictexception.xml"/>
     <rule ref="rulesets/java/optimizations.xml"/>
-
-    <rule name="LoosePackageCoupling"
-          message="Avoid coupling between classes in the com.example package."
-          class="net.sourceforge.pmd.lang.java.rule.design.LoosePackageCoupling">
-        <description>Scan for coupling between classes in the com.example package.</description>
-        <priority>3</priority>
-        <properties>
-            <property name="packageNames">
-                <value>com.example.*</value>
-            </property>
-        </properties>
-    </rule>
     
 </ruleset>
