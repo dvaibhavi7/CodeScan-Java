@@ -1,8 +1,6 @@
 <?xml version="1.0"?>
-<pmd version="6.38.0">
-    <ruleset name="MyCustomRuleSet" xmlns="http://pmd.sourceforge.net/ruleset/2.0.0"
-             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-             xsi:schemaLocation="http://pmd.sourceforge.net/ruleset/2.0.0 http://pmd.sourceforge.net/ruleset_2_0_0.xsd">
+<pmd version="6.38.0" xmlns="http://pmd.sourceforge.net/ruleset/2.0.0">
+    <ruleset name="MyCustomRuleSet">
         <description>My custom ruleset for Java code.</description>
         <rule name="Avoid using 'myApiKey123'"
               language="java"
