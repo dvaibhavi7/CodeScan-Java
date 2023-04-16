@@ -9,7 +9,7 @@
                   </description>
                   <priority>1</priority>
                   <properties>
-                           <property name="xpath" value="//StringLiteral[contains(@Image, 'password')]"/>
+                           <property name="target" value="'password', 'myApiKey123', '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'"/>
                   </properties>
          </rule>
 </ruleset>
