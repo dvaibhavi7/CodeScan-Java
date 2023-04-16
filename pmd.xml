@@ -3,13 +3,13 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://pmd.sourceforge.net/ruleset/2.0.0 https://pmd.sourceforge.io/ruleset/2.0.0/pmd_ruleset_2_0_0.xsd">
     <description>My custom ruleset for Java code.</description>
-         <rule name="Avoid using 'password'" message="Do not hardcode passwords" class="net.sourceforge.pmd.lang.rule.XPathRule" language="xpath">
+         <rule name="Avoid using 'password'" message="Do not hardcode passwords" class="net.sourceforge.pmd.lang.rule.XPathRule" language="java">
                   <description>
                            Do not hardcode passwords. Use a secure password storage mechanism instead.
                   </description>
                   <priority>1</priority>
                   <properties>
-                           <property name="xpath" value="//StringLiteral[contains(@Image, 'password')]" />
+                           <property name="xpath" value="//StringLiteral[contains(@Image, 'password')]"/>
                   </properties>
          </rule>
 </ruleset>
