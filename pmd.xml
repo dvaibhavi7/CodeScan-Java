@@ -14,10 +14,10 @@
         <exclude name="UseStringBufferForStringAppends"/>
     </rule>
     <rule name="MyCustomRule"
-        language="java"
-        message="Avoid using the word 'myApiKey123'"
-        class="net.sourceforge.pmd.lang.rule.XPathRule"
-        externalInfoUrl="https://github.com/myusername/myrepo">
+          language="java"
+          message="Avoid using the word 'myApiKey123'"
+          class="net.sourceforge.pmd.lang.rule.XPathRule"
+          externalInfoUrl="https://github.com/myusername/myrepo">
         <description>Scan for the word 'myApiKey123'</description>
         <priority>3</priority>
         <properties>
