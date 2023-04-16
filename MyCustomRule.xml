@@ -7,7 +7,7 @@
     <priority>3</priority>
     <properties>
         <property name="xpath">
-            <value>//Literal[contains(@Image, 'myApiKey123')]</value>
+            <value>//*[contains(text(),'myApiKey123')]</value>
         </property>
     </properties>
 </rule>
