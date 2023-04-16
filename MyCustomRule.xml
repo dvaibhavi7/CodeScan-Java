@@ -1,8 +1,7 @@
-<?xml version="1.0"?>
 <rule name="MyCustomRule"
       language="java"
       message="Avoid using the word 'myApiKey123'"
-      class="net.sourceforge.pmd.lang.rule.XPathRule"
+      class="com.example.MyCustomRule"
       externalInfoUrl="https://github.com/dvaibhavi7/CodeScan-Java">
     <description>Scan for the word 'myApiKey123'</description>
     <priority>3</priority>
