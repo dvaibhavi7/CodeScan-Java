@@ -13,11 +13,6 @@
           message="Avoid using the word 'myApiKey123'">
         <description>Scan for the word 'myApiKey123'</description>
         <priority>3</priority>
-        <example><![CDATA[// Bad code
-String apiKey = "myApiKey123";
-
-// Good code
-String apiKey = "aDifferentApiKey";]]></example>
         <properties>
             <property name="violationSuppressXPath" value="//VariableDeclaratorId[@Image='apiKey']"/>
             <property name="xpath">
