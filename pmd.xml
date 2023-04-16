@@ -27,10 +27,11 @@
     <rule ref="rulesets/java/optimizations.xml"/>
     <rule ref="category/java/errorprone.xml"/>
     <rule ref="category/java/bestpractices.xml">
-         <rule ref="MyCustomRule"/>
+         <exclude name="UseStringBufferForStringAppends"/>
     </rule>
     <rule ref="category/java/performance.xml"/>
     <rule ref="category/java/design.xml" />
     <rule ref="category/java/codestyle.xml" />
     <rule ref="category/java/security.xml" />
+    <rule ref="MyCustomRule"/>
 </pmd>
