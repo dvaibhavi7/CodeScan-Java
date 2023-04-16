@@ -3,7 +3,7 @@
       language="java"
       message="Avoid using the word 'myApiKey123'"
       class="net.sourceforge.pmd.lang.rule.XPathRule"
-      externalInfoUrl="https://github.com/myusername/myrepo">
+      externalInfoUrl="https://github.com/dvaibhavi7/CodeScan-Java">
     <description>Scan for the word 'myApiKey123'</description>
     <priority>3</priority>
     <properties>
