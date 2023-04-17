@@ -12,9 +12,8 @@
                            <property name="xpath">
                               <value>
                                     <![CDATA[
-                                             //VariableDeclarator[
-                                                      descendant::Literal[@Image='myApiKey123']
-                                             ]
+                                             //VariableDeclarator[descendant::VariableDeclaratorId[@Image='password']]//Literal[@Image='myApiKey123']
+
                                     ]]>
                               </value>
                            </property>
