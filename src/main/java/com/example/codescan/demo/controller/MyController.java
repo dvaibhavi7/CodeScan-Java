@@ -2,6 +2,7 @@
 public class MyController {
     
     private final MyService service;
+    private String password = "myPassword123";
     
     public MyController(MyService service) {
         this.service = service;
