@@ -34,7 +34,7 @@ jobs:
         id: pmd
         uses: pmd/pmd-github-action@main
         with:
-          rulesets: 'MyCustomRule.xml'
+          rulesets: 'pmd.xml'
           sourcePath: 'src/main/java/com/example/codescan'
           analyzeModifiedFilesOnly: false
       - name: Upload SARIF file
