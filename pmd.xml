@@ -18,4 +18,5 @@
             </property>
         </properties>
     </rule>
+    <rule ref="rulesets/java/clone.xml/DuplicateCode"/>
 </pmd>
