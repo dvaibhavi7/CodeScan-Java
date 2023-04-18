@@ -16,5 +16,4 @@
     <rule ref="category/java/design.xml" />
     <rule ref="category/java/codestyle.xml" />
     <rule ref="category/java/security.xml" />
-    <rule ref="rulesets/java/clone.xml/DuplicateCode"/>
 </pmd>
