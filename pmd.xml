@@ -16,4 +16,17 @@
     <rule ref="category/java/design.xml" />
     <rule ref="category/java/codestyle.xml" />
     <rule ref="category/java/security.xml" />
+    <rule name="Duplicate Code" language="java" 
+        message="Duplicate code: {0}"
+        class="net.sourceforge.pmd.lang.java.rule.duplication.DuplicateCodeRule">
+        <description>
+            This rule detects duplicate code.
+        </description>
+        <priority>3</priority>
+        <properties>
+            <property name="minimumTokenCount" value="50"/>
+            <property name="maximumStatements" value="500"/>
+            <property name="minimumScore" value="0.5"/>
+        </properties>
+    </rule>
 </pmd>
